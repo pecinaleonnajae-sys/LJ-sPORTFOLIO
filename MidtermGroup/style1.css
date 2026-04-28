@@ -1,0 +1,210 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: linear-gradient(135deg, #f2f5f9 0%, #e9eef5 100%);
+            background-image: url('https://www.transparenttextures.com/patterns/cubes.png');
+            background-attachment: fixed;
+            font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.5;
+            padding: 1.5rem 1rem;
+            color: #1e293b;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .intro {
+            background: white;
+            border-radius: 1.8rem;
+            padding: 1.6rem 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 6px 14px rgba(0,0,0,0.02);
+            border: 1px solid #e6ecf3;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 650;
+            letter-spacing: -0.02em;
+            background: linear-gradient(150deg, #1e2f3f, #2b3f54);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 0.5rem;
+            line-height: 1.2;
+        }
+
+        .intro p {
+            color: #2c3f55;
+            max-width: 85%;
+            font-size: 1rem;
+        }
+
+        .trait-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            align-items: start;
+        }
+
+        .trait-card {
+            background: white;
+            border-radius: 1.8rem;
+            border: 1px solid #e2eaf2;
+            box-shadow: 0 12px 24px -16px rgba(21, 40, 60, 0.15);
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            transition: 0.1s;
+        }
+
+        .card-img {
+            width: 100%;
+            height: 140px;           
+            background: #d3dfec;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-bottom: 1px solid #cbd8e8;
+        }
+
+        .card-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 1.2rem 1.2rem 1.4rem 1.2rem;
+        }
+
+        .trait-title {
+            font-size: 1.9rem;
+            font-weight: 620;
+            line-height: 1.2;
+            margin-bottom: 0.2rem;
+            border-bottom: 2px solid #bdc9d9;
+            padding-bottom: 0.2rem;
+            display: inline-block;
+        }
+
+        .trait-desc {
+            background: #f6faff;
+            padding: 0.5rem 0.9rem;
+            border-radius: 1rem;
+            font-size: 0.9rem;
+            margin: 0.6rem 0 0.8rem 0;
+            border-left: 4px solid #889fb9;
+            color: #1e3a5f;
+        }
+
+        .core-list {
+            list-style: disc;
+            padding-left: 1.2rem;
+            font-size: 0.88rem;
+            margin-bottom: 0.5rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            column-gap: 1rem;
+        }
+
+        .core-list li {
+            margin-bottom: 0.1rem;
+        }
+
+        .core-list.single-col {
+            grid-template-columns: 1fr;
+        }
+
+        .mid-text {
+            font-size: 0.87rem;
+            background: #f1f6fd;
+            padding: 0.3rem 0.9rem;
+            border-radius: 0.8rem;
+            margin: 0.3rem 0 0.6rem 0;
+            font-style: italic;
+            color: #2b4a6b;
+        }
+
+        .highlow-pair {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 0.8rem;
+            margin-top: 0.6rem;
+        }
+
+        .high, .low {
+            border-radius: 1rem;
+            padding: 0.6rem 0.6rem 0.6rem 0.9rem;
+            background: #f9fcff;
+            border: 1px solid #dde4ed;
+        }
+
+        .high {
+            border-top: 4px solid #1f6d4f;
+        }
+
+        .low {
+            border-top: 4px solid #b13e3e;
+        }
+
+        .high .label, .low .label {
+            font-weight: 650;
+            font-size: 0.95rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .high .label { color: #166943; }
+        .low .label { color: #a33131; }
+
+        .high ul, .low ul {
+            list-style: disc;
+            padding-left: 1.1rem;
+            font-size: 0.82rem;
+        }
+
+        .high li, .low li {
+            margin-bottom: 0.2rem;
+            line-height: 1.3;
+        }
+
+        .compact-list li {
+            margin-bottom: 0.1rem;
+        }
+
+        .image-note {
+            background: #e7f0fa;
+            border-radius: 3rem;
+            padding: 0.7rem 1.5rem;
+            margin-top: 2.5rem;
+            text-align: center;
+            border: 1px solid #b6cfec;
+            font-size: 0.9rem;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 2rem;
+            color: #63778b;
+        }
+
+        @media (max-width: 850px) {
+            .trait-grid {
+                grid-template-columns: 1fr;
+            }
+            .intro p { max-width: 100%; }
+        }
+        
+        .trait-card.neuroticism-center {
+            grid-column: 1 / -1;
+            max-width: 50%;
+            margin: 0 auto; 
+            width: 100%;
+        }
