@@ -1,0 +1,157 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables Lecture</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #f4f6fb;
+            color: #111;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .info {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-left: 5px solid #2f5aab;
+            padding-left: 10px;
+            margin-top: 25px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+        }
+
+        table, th, td {
+            border: 1px solid #ccc;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background: #2f5aab;
+            color: white;
+        }
+
+        .note {
+            background: #eef3ff;
+            padding: 10px;
+            border-left: 4px solid #2f5aab;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>HTML Tables</h1>
+
+        <h2>Introduction</h2>
+        <p>
+            HTML tables are used to organize data into rows and columns.
+            They are useful for displaying structured information such as schedules, grades, and lists.
+        </p>
+
+        <h2>Basic Table Structure</h2>
+
+        <pre>
+&lt;table&gt;
+  &lt;tr&gt;
+    &lt;th&gt;Header 1&lt;/th&gt;
+    &lt;th&gt;Header 2&lt;/th&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;Data 1&lt;/td&gt;
+    &lt;td&gt;Data 2&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+    </pre>
+
+        <h2>Example Table</h2>
+
+        <table>
+            <tr>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Ana</td>
+                <td>BSIT</td>
+                <td>2nd Year</td>
+            </tr>
+            <tr>
+                <td>John</td>
+                <td>BSCS</td>
+                <td>1st Year</td>
+            </tr>
+        </table>
+
+        <h2>Table Tags Explained</h2>
+
+        <div class="note">
+            <p><b>&lt;table&gt;</b> – Creates a table</p>
+            <p><b>&lt;tr&gt;</b> – Table row</p>
+            <p><b>&lt;th&gt;</b> – Table header</p>
+            <p><b>&lt;td&gt;</b> – Table data cell</p>
+        </div>
+
+        <h2>Importance of Tables</h2>
+        <ul>
+            <li>Organizes data clearly</li>
+            <li>Makes information easier to read</li>
+            <li>Useful for reports and schedules</li>
+            <li>Improves data presentation in websites</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+            HTML tables are an important part of web design because they help present data in a structured and readable format.
+            Mastering tables is essential for creating organized web pages.
+        </p>
+
+        <footer>
+            © 2026 HTML Tables Lecture
+        </footer>
+
+    </div>
+
+</body>
+</html>

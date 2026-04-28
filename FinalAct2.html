@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Data Sheet</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+
+<div class="container">
+    <div class="header">
+
+    <div class="logo">LOGO</div>
+
+    <div class="center">
+        <div class="university">SAMPLE UNIVERSITY</div>
+        <div class="system">ENROLLMENT SYSTEM</div>
+        <div class="form-title">PERSONAL DATA SHEET</div>
+        <div class="sub">(Graduate School, Law, Medicine)</div>
+    </div>
+
+    <div class="right">
+        Program: <span class="line"></span>
+        <br>
+        <br>
+        <br>
+        Student #: <span class="line"></span>
+    </div>
+
+</div>
+
+<div class="divider"></div>
+    <br><br>
+
+<form>
+  <fieldset>
+    <legend>Student Details</legend>
+
+    <label>Surname:</label>
+    <input type="text" name="surname" required>
+
+    <label>Given Name:</label>
+    <input type="text" name="given_name" required>
+
+    <label>Middle Name:</label>
+    <input type="text" name="middle_name">
+
+    <br><br>
+    <label>Auxiliary Name: (Sr. Jr. II. III, etc.)</label>
+    <input type="text" name="aux_name">
+
+    <label>City Address:</label>
+    <input type="text" name="city_address">
+
+    <br><br>
+    <label>Zip Code:</label>
+    <input type="text" name="zip" pattern="[0-9]{4,6}">
+
+    <label>Tel. No.:</label>
+    <input type="tel" name="tel">
+
+    <label>E-mail Address:</label>
+    <input type="email" name="email">
+    <br><br>
+
+    <label>Home Address:</label>
+    <input type="text" name="home_address">
+
+    <br><br>
+    <label>Zip Code:</label>
+    <input type="text" name="zip" pattern="[0-9]{4,6}">
+
+    <label>Region:</label>
+    <input type="text" name="region">
+    <br><br>
+
+    <label>Birthday:</label>
+    <input type="date" name="birthday">
+
+    <label>Age:</label>
+    <input type="number" name="age" min="0">
+
+    <label>Birthplace:</label>
+    <input type="text" name="birthplace">
+
+    <label>Religion:</label>
+    <input type="text" name="religion">
+    <br><br>
+
+    <label>Citizenship:</label>
+    <input type="text" name="citizenship">
+
+    <label>Sex:</label>
+    <input type="radio" name="sex" value="male"> Male
+    <input type="radio" name="sex" value="female"> Female
+    <input type="radio" name="sex" value="other"> Other
+
+    <br><br>
+    <label>If Alien, ACR # <i>(see Registrar)</i>:</label>
+    <input type="text" name="Alien">
+  </fieldset>
+
+    <fieldset>
+    <legend>Legal Status</legend>
+
+    <input type="checkbox" name="legal_status" value="citizen"> Citizen of RP<br>
+    <input type="checkbox" name="legal_status" value="resident"> Person granted permission to enter and remain as a student in RP on a visa for a defined period of time<br>
+    <input type="checkbox" name="legal_status" value="student_visa"> Person granted permission to enter and remain as a child or spouse of a worker on a visa for a defined period of time<br>
+    <input type="checkbox" name="legal_status" value="other_visa"> Other Visa<br>
+    <input type="checkbox" name="legal_status" value="unknown"> Legal status not known
+  </fieldset>
+
+  <fieldset>
+    <legend>Civil Status</legend>
+
+    <input type="checkbox" name="civil_status" value="single"> Single<br>
+    <input type="checkbox" name="civil_status" value="married"> Married<br>
+    <input type="checkbox" name="civil_status" value="divorced"> Divorced<br>
+    <input type="checkbox" name="civil_status" value="widowed"> Widowed<br>
+    <input type="checkbox" name="civil_status" value="separated"> Separated
+
+    <br><br>
+    <input type="checkbox" name="civil_status" value="working"> Working, If working:    
+    <input type="text" name="middle_name">
+    <input type="checkbox" name="civil_status" value="not working"> Not working, Office/Bus. Tel #:    
+    <input type="text" name="middle_name">
+  </fieldset>
+
+  <fieldset>
+    <legend>Father's Information</legend>
+
+    <label>Surname:</label>
+    <input type="text" name="father_surname">
+
+    <label>First Name:</label>
+    <input type="text" name="father_firstname">
+
+
+    <label>Middle Name:</label>
+    <input type="text" name="father_middlename">
+    <br><br>
+
+    <label>Auxiliary Name: (Sr. Jr. II. III, etc.)</label>
+    <input type="text" name="aux_name">
+
+    <label>Occupation/Employment:</label>
+    <input type="text" name="father_occupation">
+
+    <br><br>
+    <label>Educational Attainment:</label>
+    <input type="text" name="father_education">
+
+    <label>Parent's Address:</label>
+    <input type="text" name="mother_address">
+
+    <label>Zip Code:</label>
+    <input type="text" name="zip" pattern="[0-9]{4,6}">
+
+    <br><br>
+    <label>Tel. #:</label>
+    <input type="tel" name="mother_tel">
+  </fieldset>
+
+  <fieldset>
+    <legend>Mother's Information</legend>
+
+    <label>Surname:</label>
+    <input type="text" name="mother_surname">
+
+    <label>First Name:</label>
+    <input type="text" name="mother_firstname">
+
+    <label>Middle Name:</label>
+    <input type="text" name="mother_middlename">
+    <br><br>
+
+    <label>Auxiliary Name: (Sr.Jr.II.III,etc.)</label>
+    <input type="text" name="aux_name">
+
+    <label>Occupation/Employment:</label>
+    <input type="text" name="mother_occupation">
+    <br><br>
+
+    <label>Educational Attainment:</label>
+    <input type="text" name="mother_education">
+
+    <label>Parent's Address:</label>
+    <input type="text" name="mother_address">
+
+    <label>Zip Code:</label>
+    <input type="text" name="zip" pattern="[0-9]{4,6}">
+    <br><br>
+
+    <label>Tel. #:</label>
+    <input type="tel" name="mother_tel">
+  </fieldset>
+
+  <fieldset>
+    <legend>Guardian's Information (If Applicable)</legend>
+
+    <label>Surname:</label>
+    <input type="text" name="guardian_name">
+
+    <label>First Name:</label>
+    <input type="text" name="guardian_name">
+    
+    <label>Middle Name:</label>
+    <input type="text" name="guardian_name">
+    <br><br>
+
+    <label>Auxiliary Name: (Sr. Jr. II. III, etc.)</label>
+    <input type="text" name="aux_name">
+
+    <label>Occupation/Employment:</label>
+    <input type="text" name="mother_occupation">
+    <br><br>
+
+    <label>Office Bus Tel. #:</label>
+    <input type="tel" name="guardian_tel">
+
+    <label>Guardian's Address:</label>
+    <input type="text" name="guardian_address">
+    <br><br>
+
+    <label>Zip Code:</label>
+    <input type="text" name="guardian_zip">
+
+     <label>Tel. #:</label>
+    <input type="tel" name="guardian_tel">
+  </fieldset>
+
+</form>
+
+</body>
+</html>

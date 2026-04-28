@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lists, Links, and Images</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #f4f6fb;
+            color: #111;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .info {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-left: 5px solid #2f5aab;
+            padding-left: 10px;
+            margin-top: 25px;
+        }
+
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        a {
+            color: #2f5aab;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        img {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 10px auto;
+            border-radius: 10px;
+        }
+
+        .box {
+            background: #eef3ff;
+            padding: 10px;
+            border-left: 4px solid #2f5aab;
+            margin-top: 10px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Lists, Links, and Images</h1>
+
+        <h2>Introduction</h2>
+        <p>
+            HTML provides different elements to organize content such as lists, links, and images.
+            These elements help make webpages more structured, interactive, and visually appealing.
+        </p>
+
+        <h2>HTML Lists</h2>
+
+        <p><b>Unordered List (Bullets)</b></p>
+        <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+        </ul>
+
+        <p><b>Ordered List (Numbers)</b></p>
+        <ol>
+            <li>Open Browser</li>
+            <li>Type URL</li>
+            <li>Press Enter</li>
+        </ol>
+
+        <div class="box">
+            <p><b>&lt;ul&gt;</b> – Unordered list</p>
+            <p><b>&lt;ol&gt;</b> – Ordered list</p>
+            <p><b>&lt;li&gt;</b> – List item</p>
+        </div>
+
+        <h2>HTML Links</h2>
+
+        <p>
+            Links are created using the <b>&lt;a&gt;</b> tag.
+        </p>
+
+        <p>
+            Example:
+            <a href="https://www.w3schools.com" target="_blank">
+                Visit W3Schools
+            </a>
+        </p>
+
+        <div class="box">
+            <p><b>&lt;a href=""&gt;</b> – Creates a hyperlink</p>
+            <p><b>target="_blank"</b> – Opens link in new tab</p>
+        </div>
+
+        <h2>HTML Images</h2>
+
+        <p>Images are added using the <b>&lt;img&gt;</b> tag.</p>
+
+        <img src="https://via.placeholder.com/400x200.png?text=Sample+Image" alt="Sample Image">
+
+        <div class="box">
+            <p><b>&lt;img src=""&gt;</b> – Displays image</p>
+            <p><b>alt=""</b> – Alternative text if image fails</p>
+        </div>
+
+        <h2>Importance</h2>
+        <ul>
+            <li>Lists organize content clearly</li>
+            <li>Links connect webpages together</li>
+            <li>Images improve visual design</li>
+        </ul>
+
+        <h2>Conclusion</h2>
+        <p>
+            Lists, links, and images are essential HTML elements that make webpages more interactive, organized, and visually appealing.
+            Mastering these is important in web development.
+        </p>
+
+        <footer>
+            © 2026 HTML Lecture - Lists, Links, and Images
+        </footer>
+
+    </div>
+
+</body>
+</html>

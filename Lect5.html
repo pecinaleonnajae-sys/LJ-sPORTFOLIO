@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Lecture</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            background: #f4f6fb;
+            color: #111;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+
+        .info {
+            text-align: center;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            border-left: 5px solid #2f5aab;
+            padding-left: 10px;
+            margin-top: 25px;
+        }
+
+        .box {
+            background: #eef3ff;
+            padding: 12px;
+            border-left: 4px solid #2f5aab;
+            margin-top: 10px;
+        }
+
+        code {
+            background: #1e1e2f;
+            color: #fff;
+            padding: 10px;
+            display: block;
+            border-radius: 8px;
+            overflow-x: auto;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 30px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>CSS (Cascading Style Sheets)</h1>
+
+        <h2>Introduction</h2>
+        <p>
+            CSS (Cascading Style Sheets) is used to style and design HTML webpages.
+            It controls the layout, colors, fonts, spacing, and overall appearance of a website.
+            Without CSS, websites would look plain and unformatted.
+        </p>
+
+        <h2>Ways to Apply CSS</h2>
+
+        <ul>
+            <li><b>Inline CSS</b> – Applied inside HTML elements</li>
+            <li><b>Internal CSS</b> – Written inside &lt;style&gt; tag</li>
+            <li><b>External CSS</b> – Separate .css file linked to HTML</li>
+        </ul>
+
+        <h2>Example of Inline CSS</h2>
+        <code>
+            &lt;p style="color: red;"&gt;This is a red text&lt;/p&gt;
+        </code>
+
+        <h2>Example of Internal CSS</h2>
+        <code>
+            &lt;style&gt;
+            p {
+            color: blue;
+            }
+            &lt;/style&gt;
+        </code>
+
+        <h2>CSS Properties</h2>
+
+        <div class="box">
+            <p><b>color</b> – changes text color</p>
+            <p><b>background-color</b> – changes background</p>
+            <p><b>font-size</b> – changes text size</p>
+            <p><b>margin</b> – space outside element</p>
+            <p><b>padding</b> – space inside element</p>
+        </div>
+
+        <h2>Why CSS is Important</h2>
+        <ul>
+            <li>Makes websites visually appealing</li>
+            <li>Improves user experience</li>
+            <li>Separates design from content</li>
+            <li>Allows responsive design for different devices</li>
+        </ul>
+
+        <h2>Example Styling Concept</h2>
+
+        <code>
+            body {
+            background-color: lightblue;
+            font-family: Arial;
+            }
+
+            h1 {
+            color: darkblue;
+            text-align: center;
+            }
+        </code>
+
+        <h2>Conclusion</h2>
+        <p>
+            CSS is an essential part of web development. It allows developers to design attractive and user-friendly websites by controlling the appearance of HTML elements.
+        </p>
+
+        <footer>
+            © 2026 CSS Lecture File
+        </footer>
+
+    </div>
+
+</body>
+</html>

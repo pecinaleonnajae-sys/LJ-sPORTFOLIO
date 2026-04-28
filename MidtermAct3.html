@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Midterm Lecture 6</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hover-img {
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+.hover-img:hover {
+    transform: scale(1.1);
+}
+
+.rounded {
+    border-radius: 10px;
+    width: 450px;
+    height: auto;
+}
+
+.corners-rounded {
+    border-top-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 300px;
+}
+
+.float-right {
+    float: right;
+    width: 200px;
+    margin: 0 20px 20px 0;
+}
+
+
+.box-shadow {
+    width: 300px;
+    box-shadow: 10px 10px 20px gray;
+}
+
+
+.shape-circle {
+    float: left;
+    width: 250px;
+    shape-outside: circle();
+    clip-path: circle();
+    margin: 20px;
+}
+
+.shape-polygon {
+    float: left;
+    width: 250px;
+    shape-outside: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 80% 100%, 0% 100%);
+    margin: 20px;
+}
+
+.imagemask {
+    font-size: 250px;
+    font-weight: 900;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px 0;
+
+    background-image: url("https://bigdreamboatmancoron.com/cdn/shop/articles/coron-blog-cover-image_51ffee40-281e-48cc-b644-2fa4b39a6749.jpg?v=1741269730");
+    background-size: cover;
+    background-position: center;
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    background-clip: text;
+    color: transparent;
+}
+</style>
+</head>
+<body>
+
+<h1>Midterm Lecture 6</h1>
+
+<hr>
+<h2>1. Image with 2px Solid Border</h2>
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCNz_ilPdl3QA6C-MY2alfF1N52cOm_7EpLA&s" 
+     alt="British Short Hair" 
+     style="border: 2px solid black;">
+
+<hr>
+<h2>2. Image with Definite Size (5x5")</h2>
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e"
+     alt="Beach 5x5" 
+     style="width:500px; height:500px;">
+
+<hr>
+<h2>3. Image with Rounded Borders</h2>
+<img src="https://i.natgeofe.com/k/55256f3f-2cf1-4b93-9d95-a13b0faa30a6/Mom-and-Babies_Polar-Bear_KIDS_0223-crop_4x3.jpg" 
+     alt="Polar Bear round borders" 
+     class="rounded">
+
+<hr>
+<h2>4. Image with Top-Left and Bottom-Right Rounded</h2>
+<img src="data:image/jpeg;base64,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"  
+     class="Panda rounded corners">
+
+<hr>
+<h2>5. Image Linking to UE</h2>
+<a href="https://www.ue.edu.ph" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/9f/University_of_the_East_seal.png" 
+         alt="Click to visit UE" 
+         width="300">
+</a>
+
+<hr>
+<h2>6. Image with Float Right</h2>
+<img src="https://www.dogster.com/wp-content/uploads/2024/03/White-russian-borzoi-dog_George-Trumpeter_Shutterstock.jpg" 
+     alt="Dog float right" 
+     class="float-right">
+<br><br><br><br><br><br><br><br><br><br><br><br>
+<hr>
+<h2>7. Image with CSS Hover Effect</h2>
+<p><b>Hover Effect Used:</b> transform: scale(1.1);</p>
+<img src="https://images2.minutemediacdn.com/image/upload/c_fill,w_1200,ar_16:9,f_auto,q_auto,g_auto/images/voltaxMediaLibrary/mmsport/mentalfloss/01gwscsvw2yrt73s9sqj.jpg"
+     alt="Hover effect image axolotl"
+     class="hover-img">
+
+<hr>
+<h2>8. Image with CSS Box Shadow</h2>
+<p><b>Box Shadow:</b> 10px 10px 20px gray</p>
+<img src="https://media.4-paws.org/1/5/e/2/15e2e7bb7be82e955d85ac515200ad121d64d087/VIER%20PFOTEN_2025-02-18_00108-2736x1824-2286x1582-1920x1329.jpg"
+     alt="Box shadow image lion"
+     class="box-shadow">
+
+<hr>
+<h2>9. Image with Shape-Outside Circle</h2>
+<p><b>Shape Function Used:</b> circle()</p>
+<img src="https://cdn.britannica.com/94/494-050-A674AD3A/Fallow-deer-dama-dama.jpg"
+     alt="Circle shape image deer"
+     class="shape-circle">
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr>
+<h2>10. Image with Shape-Outside Polygon</h2>
+<p><b>Shape Function Used:</b> polygon(0 0, 100% 0, 80% 100%, 0% 100%)</p>
+<img src="https://images.theconversation.com/files/534907/original/file-20230629-25-u5utdu.jpg?ixlib=rb-4.1.0&q=45&auto=format&w=1000&fit=clip"
+     alt="Polygon shape image raccoon"
+     class="shape-polygon">
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<hr>
+<h2>11. Image Mask</h2>
+<h1 class="imagemask">Ivan</h1>
+
+
+</body>
+</html>
