@@ -1,0 +1,152 @@
+        body {
+            background-image: url("https://www.shutterstock.com/image-photo/close-shot-white-plush-sofa-260nw-2493006393.jpg");
+            background-repeat: no-repeat; 
+            background-size: cover;       
+            background-attachment: fixed; 
+            background-position: center;   
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        nav {
+            background: rgba(0,0,0,0.7);
+            padding: 15px 30px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            text-decoration: underline;
+        }
+        section {
+            margin: 100px auto;
+            padding: 60px 20px;
+            max-width: 1200px;
+            border-top: 2px solid rgba(255,255,255,0.3);
+        }
+
+        h1, h2, h3, h4 {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        p {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            color: white;
+            background: rgba(0, 0, 0, 0.6);
+            line-height: 1.6;
+            border-radius: 10px;
+            text-align: justify;
+            transition: 0.3s;
+        }
+
+        p:hover {
+            background: rgba(0, 0, 0, 0.8);
+        }
+        button {
+            padding: 15px 30px;
+            font-size: 16px;
+            background-color: #ffcc00;
+            color: black;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: bold;
+            margin-top: 15px;
+        }
+
+        button:hover {
+            background-color: #e6b800;
+            transform: scale(1.05);
+        }
+
+        a.button-link {
+            text-decoration: none;
+        }
+        #gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        #gallery img {
+            width: 200px;
+            border-radius: 15px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.6);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        #gallery img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 12px 20px rgba(0,0,0,0.8);
+        }
+        ul {
+            list-style: none;
+            padding-left: 0;
+            max-width: 600px;
+            margin: 20px auto;
+        }
+
+        ul li {
+            background: none;
+            padding: 10px 15px;
+            margin: 10px 0;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        ul li:hover {
+            background: rgba(255, 204, 0, 0.4);
+        }
+        section a {
+            color: navy;
+            text-decoration: underline;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        section a:hover {
+            color: #fff;
+        }
+        @media (max-width: 768px) {
+            #gallery {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+        }
